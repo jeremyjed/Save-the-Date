@@ -38,7 +38,7 @@ a:hover {
 
 .wrapper {
   min-height: 100vh;
-  padding-top: 30px;
+  padding-top: 42px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -46,7 +46,7 @@ a:hover {
 }
 
 .inner {
-  min-width: 850px;
+  min-width: 800px;
   padding-top: 40px;
   padding-bottom: 10px;
   margin: 0 auto;
@@ -56,7 +56,7 @@ a:hover {
     font-size: 22px;
     font-family: "Muli-Bold";
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 29px;
     color: #333;
     letter-spacing: 2px; }
 
@@ -78,14 +78,14 @@ form {
     display: block; }
 
 .form-control {
-  border: 1px solid #ccc;
+  border: rgba(54, 47, 47, 0.74);
   display: block;
   width: 100%;
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 20px;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 5px;
   font-family: "Muli-Bold";
-  background-color:rgba(169, 169, 169, 0.4); 
+  background-color:rgba(56, 50, 50, 0.274); 
   }
   .form-control:focus {
     border: 1px solid #ae3c33; }
@@ -164,6 +164,6 @@ select {
 
   form {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px; } }
+    padding-right: 25px;
+    padding-left: 25px; } }
 
