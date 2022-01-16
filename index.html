@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  video {
+    width: 100%;
+    height:fit-content;   
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+</style>
+</head>
+<body>
+<video class="center" controls id="myvideo" poster="image_1std.png" onended="window.location.href = 'page2.html';">
+  <source src="Save-the-Date-video.mp4">
+  Your browser does not support the video tag.
+</video>
+</body>
+
+
+<script>
+
+document.getElementById('myvideo').addEventListener('play', function (e) { 
+  this.mozRequestFullScreen ? this.mozRequestFullScreen() : this.webkitRequestFullScreen ? this.webkitRequestFullScreen() : null; }, false);
+</script>
+
+</html>
