@@ -6,29 +6,53 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
       body {
-        background-image: url("images/thanks.png");
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+        background-image: url("images/thanks.png");      
         background-size: cover;
-        min-width: 828px;
       }
-      .cal {
-        position: fixed;
-        height: 100px;
-        padding: 10px;
-        top: 90%;
-        left: 50%;
+      
+      .container .btn1 {
+        position: absolute;
+        top: 74%;
+        left: 26%;
         transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(85, 85, 85, 0.493);
+        color: white;
+        font-size: 16px;
+        padding: 50px 75px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
       }
-       
+      .container .btn2 {
+        position: absolute;
+        top: 74%;
+        left: 72%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(85, 85, 85, 0.493);
+        color: white;
+        font-size: 16px;
+        padding: 50px 75px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
     </style>
     </head>
 	<body>
+    <div class="container">
+      
+      <button id="btn1" class="btn1" onclick="location.href='https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NnEzMjUzanVkbTY1ZzZxbmcyc2s2M2xwNTIgamVyZW15amVkQG0&amp;tmsrc=jeremyjed%40gmail.com';"></button>
+      <button class="btn2"></button>
+    </div>
         <!--
         <div class="cal">
             <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NnEzMjUzanVkbTY1ZzZxbmcyc2s2M2xwNTIgamVyZW15amVkQG0&amp;tmsrc=jeremyjed%40gmail.com"><img border="0" src="images/google_cal.png"></a>
         </div>
         -->
     </body>
+    <script>
+     
+    </script>
     </html>

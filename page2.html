@@ -20,23 +20,23 @@
 					<h3>please provide your address</h3>
 					<div class="form-group">
 						<div class="form-wrapper">
-							<input name="firstname" type="text" placeholder="First Name" class="form-control">
+							<input name="firstname" type="text" placeholder="First Name" class="form-control" required>
 						</div>
 						<div class="form-wrapper">
-							<input name="lastname" type="text" placeholder="Last Name" class="form-control">
+							<input name="lastname" type="text" placeholder="Last Name" class="form-control" required>
 						</div>
 					</div>
 					<div class="form-wrapper">
-						<input name="street" type="text" placeholder="Street" class="form-control">
+						<input name="street" type="text" placeholder="Street" class="form-control" required>
 					</div>
 					<div class="form-wrapper">
-						<input name="city" type="text" placeholder="City" class="form-control">
+						<input name="city" type="text" placeholder="City" class="form-control" required>
 					</div>
 					<div class="form-wrapper">
-						<input name="state" type="text" placeholder="State" class="form-control">
+						<input name="state" type="text" placeholder="State" class="form-control" required>
 					</div>
                     <div class="form-wrapper">
-						<input name="zip" type="text" placeholder="Zip Code" class="form-control">
+						<input name="zip" type="text" placeholder="Zip Code" class="form-control" required>
 					</div>
 					<button  type="submit" id="button">Submit</button>
                 </form>
@@ -56,17 +56,8 @@
       method: 'POST',
       body: data,
     })
+	window.location.href = 'page3.html';
   });
-});
-
-
-
-
-        var button = document.getElementById('button');
-
-        button.addEventListener('click', function(){
-            window.location.href = 'page3.html';
-            //alert('Button worked');
 });
         </script>
 </html>
