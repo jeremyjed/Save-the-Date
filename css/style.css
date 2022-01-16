@@ -127,7 +127,7 @@ select {
       transition-property: color;
       -webkit-transition-duration: 0.5s;
       transition-duration: 0.5s; }
-      button {
+      button:before {
         content: "";
         position: absolute;
         z-index: -1;
@@ -146,7 +146,7 @@ select {
         transition-duration: 0.5s;
         -webkit-transition-timing-function: ease-out;
         transition-timing-function: ease-out; }
-        button {
+      button:hover:before {
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
         -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);

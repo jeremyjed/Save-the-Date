@@ -16,35 +16,52 @@
 
 		<div class="wrapper" style="background-image: url('images/ellyandjed-71.jpg');">
 			<div class="inner">
-				<form action="" id="contact">
+				<form action="https://script.google.com/macros/s/AKfycbyuh55OgpEUXL0wQ1CLhAVq3o9pIyPmj0KaZelrVTuoGc56RW0EJyGy2Pif0O17KJBS/exec" id="contact">
 					<h3>please provide your address</h3>
 					<div class="form-group">
 						<div class="form-wrapper">
-							<input type="text" placeholder="First Name" class="form-control">
+							<input name="firstname" type="text" placeholder="First Name" class="form-control">
 						</div>
 						<div class="form-wrapper">
-							<input type="text" placeholder="First Name" class="form-control">
+							<input name="lastname" type="text" placeholder="Last Name" class="form-control">
 						</div>
 					</div>
 					<div class="form-wrapper">
-						<input type="text" placeholder="Street" class="form-control">
+						<input name="street" type="text" placeholder="Street" class="form-control">
 					</div>
 					<div class="form-wrapper">
-						<input type="text" placeholder="City" class="form-control">
+						<input name="city" type="text" placeholder="City" class="form-control">
 					</div>
 					<div class="form-wrapper">
-						<input type="text" placeholder="State" class="form-control">
+						<input name="state" type="text" placeholder="State" class="form-control">
 					</div>
                     <div class="form-wrapper">
-						<input type="text" placeholder="Zip Code" class="form-control">
+						<input name="zip" type="text" placeholder="Zip Code" class="form-control">
 					</div>
-                </form>
 					<button  type="submit" id="button">Submit</button>
+                </form>
+					
 			</div>
 		</div>
 		
 	</body>
     <script>
+		window.addEventListener("load", function() {
+  const form = document.getElementById('contact');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+  });
+});
+
+
+
+
         var button = document.getElementById('button');
 
         button.addEventListener('click', function(){
