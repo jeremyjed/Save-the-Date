@@ -116,7 +116,7 @@ if (reversed == null) { reversed = false; }
 			this.isSingleFrame = true;
 		}
 		this.google.on('click', function(){
-		window.open('https://calendar.google.com/event?action=TEMPLATE&tmeid=NnEzMjUzanVkbTY1ZzZxbmcyc2s2M2xwNTIgamVyZW15amVkQG0&tmsrc=jeremyjed%40gmail.com', '_blank');
+		window.open('https://calendar.google.com/event?action=TEMPLATE&tmeid=NWVsaGhibDl2dDJmZmxyMHFxbHRxMmM4NDkgamVyZW15amVkQG0&tmsrc=jeremyjed%40gmail.com', '_blank');
 		});
 		this.apple.on("click",function(){
 		window.open('https://drive.google.com/file/d/12Ab_f1vbMyQMxXX1CL7KvTlqiu9uZd6T/view?usp=sharing', '_blank');
