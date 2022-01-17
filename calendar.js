@@ -116,12 +116,11 @@ if (reversed == null) { reversed = false; }
 			this.isSingleFrame = true;
 		}
 		this.google.on('click', function(){
-		window.open('https://calendar.google.com/event?action=TEMPLATE&tmeid=NWVsaGhibDl2dDJmZmxyMHFxbHRxMmM4NDkgamVyZW15amVkQG0&tmsrc=jeremyjed%40gmail.com', '_blank');
-		});
+			window.open('https://calendar.google.com/event?action=TEMPLATE&tmeid=NWVsaGhibDl2dDJmZmxyMHFxbHRxMmM4NDkgamVyZW15amVkQG0&tmsrc=jeremyjed%40gmail.com', '_blank');
+			});
 		this.apple.on("click",function(){
-		window.open('https://drive.google.com/file/d/12Ab_f1vbMyQMxXX1CL7KvTlqiu9uZd6T/view?usp=sharing', '_blank');
-		});
-
+			window.open('iCal-20220116-115458.ics');
+			});
 	}
 
 	// actions tween:
@@ -132,7 +131,6 @@ if (reversed == null) { reversed = false; }
 	this.apple.name = "apple";
 	this.apple.setTransform(600.5,1435.5,1,1,0,0,0,137.5,102.5);
 	new cjs.ButtonHelper(this.apple, 0, 1, 1);
-
 
 	this.google = new lib.google();
 	this.google.name = "google";
