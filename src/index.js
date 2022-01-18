@@ -22,7 +22,10 @@ const app = initializeApp(firebaseConfig);
 const db = getDatabase(app)
 
 window.writeData=function() {
-  //console.log('this works.');
+    var formValid = document.forms["contact"].checkValidity();
+    console.log(formValid);  
+    //return formValid;
+  if (formValid == true) {  
   push(ref(db), {
           First_Name: document.getElementById("firstname").value,
           Last_Name: document.getElementById("lastname").value,
@@ -32,12 +35,9 @@ window.writeData=function() {
           Zip: document.getElementById("zip").value,
       }
 
-  );}
-
-//var address = document.getElementById("firstname").value
-//			writeUserData(address)
-
-//window.writeUserData=function(address) {
-//  push(ref(db), {
-//    address
-// });}
+  ).then(() =>
+  window.location.href = 'calendar.html');}
+  else {
+    alert("All Fields are required.")
+  }
+}

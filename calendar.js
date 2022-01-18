@@ -2,9 +2,7 @@
 
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
-lib.ssMetadata = [
-		{name:"calendar_atlas_1", frames: [[0,0,829,1794],[831,573,275,205],[831,0,787,571]]}
-];
+lib.ssMetadata = [];
 
 
 (lib.AnMovieClip = function(){
@@ -28,24 +26,21 @@ lib.ssMetadata = [
 
 
 (lib.FlashAICB = function() {
-	this.initialize(ss["calendar_atlas_1"]);
-	this.gotoAndStop(0);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.FlashAICB);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,829,1794);
 
 
 (lib.ical = function() {
-	this.initialize(ss["calendar_atlas_1"]);
-	this.gotoAndStop(1);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.ical);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,275,205);
 
 
 (lib.pngfindcomcalendariconpng1819548 = function() {
-	this.initialize(ss["calendar_atlas_1"]);
-	this.gotoAndStop(2);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.pngfindcomcalendariconpng1819548);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,787,571);
 
 
 (lib.google = function(mode,startPosition,loop,reversed) {
@@ -119,7 +114,7 @@ if (reversed == null) { reversed = false; }
 			window.open('https://calendar.google.com/event?action=TEMPLATE&tmeid=NWVsaGhibDl2dDJmZmxyMHFxbHRxMmM4NDkgamVyZW15amVkQG0&tmsrc=jeremyjed%40gmail.com', '_blank');
 			});
 		this.apple.on("click",function(){
-			window.open('iCal-20220116-115458.ics');
+			window.open('Jelly-Wedding.ics');
 			});
 	}
 
@@ -129,33 +124,35 @@ if (reversed == null) { reversed = false; }
 	// Layer_1
 	this.apple = new lib.apple();
 	this.apple.name = "apple";
-	this.apple.setTransform(600.5,1435.5,1,1,0,0,0,137.5,102.5);
+	this.apple.setTransform(282.8,676.05,0.471,0.471,0,0,0,137.5,102.5);
 	new cjs.ButtonHelper(this.apple, 0, 1, 1);
 
 	this.google = new lib.google();
 	this.google.name = "google";
-	this.google.setTransform(231.8,1433,1,1,0,0,0,137.8,100);
+	this.google.setTransform(109.2,674.9,0.471,0.471,0,0,0,137.9,100);
 	new cjs.ButtonHelper(this.google, 0, 1, 1);
 
 	this.instance = new lib.FlashAICB();
-	this.instance.setTransform(2,3);
+	this.instance.setTransform(1,1,0.471,0.471);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.google},{t:this.apple}]}).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(416,899,415,898);
+p.nominalBounds = new cjs.Rectangle(196,423,195.5,423);
 // library properties:
 lib.properties = {
 	id: 'BB973DD8CF3B4519BF25C23DE6E52374',
-	width: 828,
-	height: 1792,
+	width: 390,
+	height: 844,
 	fps: 24,
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/calendar_atlas_1.png", id:"calendar_atlas_1"}
+		{src:"images/FlashAICB.png", id:"FlashAICB"},
+		{src:"images/ical.png", id:"ical"},
+		{src:"images/pngfindcomcalendariconpng1819548.png", id:"pngfindcomcalendariconpng1819548"}
 	],
 	preloads: []
 };
