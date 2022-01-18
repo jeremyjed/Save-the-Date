@@ -124,28 +124,28 @@ if (reversed == null) { reversed = false; }
 	// Layer_1
 	this.apple = new lib.apple();
 	this.apple.name = "apple";
-	this.apple.setTransform(282.8,676.05,0.471,0.471,0,0,0,137.5,102.5);
+	this.apple.setTransform(268.05,640.85,0.4464,0.4464,0,0,0,137.6,102.6);
 	new cjs.ButtonHelper(this.apple, 0, 1, 1);
 
 	this.google = new lib.google();
 	this.google.name = "google";
-	this.google.setTransform(109.2,674.9,0.471,0.471,0,0,0,137.9,100);
+	this.google.setTransform(103.5,639.7,0.4464,0.4464,0,0,0,138,100);
 	new cjs.ButtonHelper(this.google, 0, 1, 1);
 
 	this.instance = new lib.FlashAICB();
-	this.instance.setTransform(1,1,0.471,0.471);
+	this.instance.setTransform(1,1,0.4464,0.4464);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.google},{t:this.apple}]}).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(196,423,195.5,423);
+p.nominalBounds = new cjs.Rectangle(186,401,185.10000000000002,400.9);
 // library properties:
 lib.properties = {
 	id: 'BB973DD8CF3B4519BF25C23DE6E52374',
-	width: 390,
-	height: 844,
+	width: 370,
+	height: 800,
 	fps: 24,
 	color: "#FFFFFF",
 	opacity: 1.00,
